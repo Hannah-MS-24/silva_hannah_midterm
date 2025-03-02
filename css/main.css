@@ -1,0 +1,1516 @@
+/* Geral */
+.hidden {
+    display: none;
+  }
+  
+  html,
+  body {
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-size: cover;
+    background-color: #808080;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    font-family: russo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 18px;
+  }
+  
+  /*Main Nav*/
+  
+  #main-nav button {
+    width: 20px;
+    height: 20px;
+    background: url(../images/burger.svg) no-repeat center;
+    margin-top: 15px;
+    transition: all 0.5s ease;
+    margin-bottom: 20px;
+    border: 0;
+  }
+  
+  #main-nav button.expanded {
+    transform: rotate(90deg);
+  }
+  
+  #burguer-con {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
+  }
+  
+  #burguer-con.slide-toggle {
+    display: block;
+  }
+  
+  #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 3px solid black;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  #main-nav ul li {
+    margin: 0 5px;
+  }
+  
+  #main-nav ul li a {
+    display: block;
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  #main-nav ul li a:hover {
+    color: blueviolet;
+  }
+  
+  /*Logo*/
+  
+  #main-logo {
+    display: none;
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    overflow: hidden;
+    border: 2px solid #000;
+    position: absolute;
+    top: 10px;
+    left: 15%;
+  }
+  
+  #main-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  #logo-small {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+  }
+  
+  #logo-small img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /*Social Icons*/
+  
+  .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+  }
+  
+  .social-icons i {
+    font-size: 15px;
+    margin-right: 0px;
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+    padding: 5%;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons i:hover {
+    color: blueviolet;
+    transform: scale(1.2);
+    background-color: blueviolet;
+  }
+  
+  .social-icons i.clicked {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .button-try-now {
+    display: inline-flex;
+    padding: 8px 12px;
+    font-size: 18px;
+    text-decoration: none;
+    border: 2px solid #000;
+    color: black;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    font-family: russo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .button-try-now a {
+    text-decoration: none;
+  }
+  
+  .button-try-now:hover {
+    transform: scale(1.1);
+  }
+  
+  /*Main*/
+  #main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .swerve-text {
+    padding: 20px;
+    display: none;
+  }
+  
+  .h2 {
+    font-size: 1, 5rem;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .swerve-text p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.6;
+    margin: 15px 0;
+    display: none;
+  }
+  
+  .button-discover {
+    display: inline-flex;
+    padding: 8px 12px;
+    font-size: 18px;
+    text-decoration: none;
+    border: 2px solid #000;
+    color: black;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    font-family: russo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .button-discover a {
+    text-decoration: none;
+  }
+  
+  .button-discover:hover {
+    transform: scale(1.1);
+  }
+  
+  .hero-image {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .hero-image img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .h3 {
+    font-size: 1, 5rem;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .h4 {
+    font-size: 1, 0rem;
+    font-weight: normal;
+    color: black;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .ingredients {
+    display: none;
+  }
+  
+  .classic-flavor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .classic-flavor img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .h4-1 {
+    font-size: 1, 0rem;
+    font-weight: normal;
+    color: black;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .design {
+    display: none;
+  }
+  
+  .citrus-flavor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .citrus-flavor img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .h4-2 {
+    font-size: 1, 0rem;
+    font-weight: normal;
+    color: black;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .flavor {
+    display: none;
+  }
+  
+  .berry-flavor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .berry-flavor img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .choose {
+    font-size: 1, 5rem;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .classic-flavor-small {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .classic-flavor-small img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .tittle-CV {
+    font-size: 1, 5rem;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .text-CV {
+    display: none;
+  }
+  
+  .tittle-CF {
+    font-size: 1, 5rem;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .citrus-flavor-small {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .citrus-flavor-small img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .text-CF {
+    display: none;
+  }
+  
+  .tittle-BF {
+    font-size: 1, 5rem;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .berry-flavor-small {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .berry-flavor-small img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .text-BF {
+    display: none;
+  }
+  
+  .read-more-btn {
+    display: inline-flex;
+    padding: 8px 12px;
+    font-size: 18px;
+    text-decoration: none;
+    border: 2px solid #000;
+    color: black;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    font-family: russo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .read-more-btn a {
+    text-decoration: none;
+  }
+  
+  .read-more-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /*Share Place*/
+  
+  .share h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .text-share {
+    display: none;
+  }
+  
+  .upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin: 20px auto;
+    max-width: 1200px; 
+  }
+  
+  .upload-circle {
+    width: 250px;
+    height: 250px;
+    background-color: #4a4a4a;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .upload-box {
+    width: 400px;
+    height: 400px;
+    background-color: #d3d3d3;
+    border: 3px dashed black;
+  }
+  
+  .share-btn {
+    display: inline-flex;
+    padding: 8px 12px;
+    font-size: 18px;
+    text-decoration: none;
+    border: 2px solid #000;
+    color: black;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    font-family: russo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin-top: 10px;
+  }
+  
+  .share-btn a {
+    text-decoration: none;
+  }
+  
+  .share-btn:hover {
+    transform: scale(1.1);
+  }
+  
+   /* Footer */
+   #footer {
+      background-color: #4a4a4a;
+      color: black;
+      padding: 40px 20px;
+      display: grid;
+      gap: 20px;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .logo-footer {
+      width: 100px;
+      height: auto;
+      justify-self: center;
+    }
+  
+    .contact {
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: left;
+      justify-self: end;
+    }
+  
+    .social-icons-footer {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .social-icons-footer i {
+      font-size: 20px;
+      color: white;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+  
+    .social-icons-footer i:hover {
+      transform: scale(1.2);
+      color: blueviolet;
+    }
+  
+    .footer-text {
+      font-size: 12px;
+      max-width: 800px;
+      margin: 20px auto 0;
+      line-height: 1.5;
+      opacity: 0.8;
+    }
+  
+  /*Products css*/
+  
+   #main-products img{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+  
+  /* Media Queries */
+  
+  @media screen and (min-width: 768px) {
+    #sticky-nav-con {
+      position: sticky;
+      top: 0px;
+      background-color: #fff;
+      border-bottom: solid 1px black;
+      z-index: 1;
+    }
+  
+    #main-nav {
+      margin-top: 4%;
+      margin-bottom: 4%;
+      border-left: 2px solid black;
+      padding-left: 30px;
+    }
+  
+    #main-nav ul li a {
+      display: inline;
+    }
+  
+    #button {
+      display: none;
+    }
+  
+    #burguer-con {
+      display: block;
+      font-size: 12px;
+    }
+  
+    #burguer-con ul li,
+    #burguer-con ul li:first-child {
+      border: none;
+      display: inline;
+    }
+  
+    #burguer-con ul li {
+      margin-right: 10px;
+    }
+  
+    #burguer-con ul li:last-child {
+      margin-right: 0px;
+    }
+    /*Logo*/
+  
+    #logo-small {
+      display: none;
+    }
+  
+    #main-logo {
+      display: block;
+    }
+    /*Social Icons*/
+  
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .social-icons i {
+      font-size: 20px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+  
+    .social-icons i:hover {
+      transform: scale(1.2);
+      color: blueviolet;
+    }
+  
+    .button-try-now {
+      display: inline-block;
+      padding: 8px 16px;
+      font-size: 18px;
+      text-decoration: none;
+      border: 2px solid #000;
+      color: black;
+      border-radius: 15px;
+      transition: all 0.3s ease-in-out;
+      font-family: russo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+  
+    .button-try-now a {
+      text-decoration: none;
+    }
+  
+    .button-try-now:hover {
+      transform: scale(1.1);
+    }
+  
+    .button-discover {
+      display: block;
+      padding: 8px 16px;
+      font-size: 18px;
+      text-decoration: none;
+      border: 2px solid #000;
+      color: black;
+      border-radius: 15px;
+      transition: all 0.3s ease-in-out;
+      font-family: russo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+  
+    .button-discover a {
+      text-decoration: none;
+    }
+  
+    .button-discover:hover {
+      transform: scale(1.1);
+    }
+  
+    /*Main*/
+    #main {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .swerve-text {
+      padding: 20px;
+      display: block;
+    }
+  
+    .h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .swerve-text p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+  
+    .hero-image img {
+      width: 600px;
+      height: 300px;
+      object-fit: cover;
+    }
+  
+    h3,
+    h4 .ingredients {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .h4 {
+      font-size: 1.8rem;
+      font-weight: normal;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .ingredients {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: block;
+    }
+  
+    .ingredients p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+  
+    .classic-flavor img {
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
+    }
+  
+    .h4-1 .design {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .design {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: block;
+    }
+  
+    .design p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+    .citrus-flavor img {
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
+      margin-top: 40px;
+    }
+  
+    h4 .h4-2 .flavor {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .flavor {
+      padding-right: 20px;
+      display: block;
+    }
+  
+    .flavor p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+  
+    .berry-flavor img {
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
+      margin-top: 40px;
+    }
+  
+    .choose {
+      font-size: 2rem;
+      font-weight: bold;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .classic-flavor-small img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      margin-right: 100px;
+    }
+  
+    .tittle-CV {
+      font-size: 2rem;
+      font-weight: normal;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .text-CV {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: block;
+    }
+  
+    .text-CV p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+  
+    .tittle-CF {
+      font-size: 2rem;
+      font-weight: normal;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .citrus-flavor-small img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      margin-right: 100px;
+    }
+  
+    .text-CF {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: block;
+    }
+  
+    .text-CF p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+  
+    .tittle-BF {
+      font-size: 2rem;
+      font-weight: normal;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .berry-flavor-small img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      margin-right: 100px;
+    }
+  
+    .text-BF {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: block;
+    }
+  
+    .text-BF p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+  
+    .read-more-btn {
+      display: inline-flex;
+      padding: 8px 12px;
+      font-size: 18px;
+      text-decoration: none;
+      border: 2px solid #000;
+      color: black;
+      border-radius: 15px;
+      transition: all 0.3s ease-in-out;
+      font-family: russo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      margin-top: 10px;
+    }
+  
+    .read-more-btn a {
+      text-decoration: none;
+    }
+  
+    .read-more-btn:hover {
+      transform: scale(1.1);
+    }
+  
+    /*Share Place*/
+  
+    .share h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .text-share {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: block;
+    }
+  
+    .text-share p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+  
+    .upload-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px; 
+      flex-wrap: wrap;
+      margin: 20px auto;
+      max-width: 1200px; 
+    }
+  
+    .upload-circle {
+      width: 250px;
+      height: 250px;
+      background-color: #4a4a4a;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .upload-box {
+      width: 400px;
+      height: 400px;
+      background-color: #d3d3d3;
+      border: 3px dashed black;
+    }
+  
+    .share-btn {
+      display: inline-flex;
+      padding: 8px 12px;
+      font-size: 18px;
+      text-decoration: none;
+      border: 2px solid #000;
+      color: black;
+      border-radius: 15px;
+      transition: all 0.3s ease-in-out;
+      font-family: russo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      margin-top: 10px;
+    }
+  
+    .share-btn a {
+      text-decoration: none;
+    }
+  
+    .share-btn:hover {
+      transform: scale(1.1);
+    }
+  
+     /* Footer */
+     #footer {
+      background-color: #4a4a4a;
+      color: black;
+      padding: 40px 20px;
+      display: grid;
+      gap: 20px;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .logo-footer {
+      width: 100px;
+      height: auto;
+      justify-self: center;
+    }
+  
+    .contact {
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: left;
+      justify-self: end;
+    }
+  
+    .social-icons-footer {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .social-icons-footer i {
+      font-size: 20px;
+      color: white;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+  
+    .social-icons-footer i:hover {
+      transform: scale(1.2);
+      color: blueviolet;
+    }
+  
+    .footer-text {
+      font-size: 12px;
+      max-width: 800px;
+      margin: 20px auto 0;
+      line-height: 1.5;
+      opacity: 0.8;
+    }
+  
+     /*Products css*/
+  
+     #main-products img{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    #main-nav {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 25px;
+    }
+  
+    #burguer-con {
+      font-size: 16px;
+      margin-top: 28px;
+    }
+  
+    #burguer-con ul li {
+      margin-right: 25px;
+    }
+  
+    .grid-con {
+      max-width: 1600px;
+      grid-column-gap: 20px;
+    }
+    /*Social Icons*/
+  
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .social-icons i {
+      font-size: 20px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+  
+    .social-icons i:hover {
+      transform: scale(1.2);
+      color: blueviolet;
+    }
+  
+    .button-try-now {
+      display: inline-block;
+      padding: 8px 16px;
+      font-size: 18px;
+      text-decoration: none;
+      border: 2px solid #000;
+      color: black;
+      border-radius: 15px;
+      transition: all 0.3s ease-in-out;
+      font-family: russo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+  
+    .button-try-now a {
+      text-decoration: none;
+    }
+  
+    .button-try-now:hover {
+      transform: scale(1.1);
+    }
+  
+    /*Main*/
+    #main {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .swerve-text {
+      padding: 20px;
+      display: block;
+    }
+  
+    .h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .swerve-text p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+    .button-discover {
+      display: block;
+      padding: 8px 16px;
+      font-size: 18px;
+      text-decoration: none;
+      border: 2px solid #000;
+      color: black;
+      border-radius: 15px;
+      transition: all 0.3s ease-in-out;
+      font-family: russo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+  
+    .button-discover a {
+      text-decoration: none;
+    }
+  
+    .button-discover:hover {
+      transform: scale(1.1);
+    }
+  
+    .hero-image img {
+      width: 600px;
+      height: 300px;
+      object-fit: cover;
+    }
+  
+    h3,
+    h4 .ingredients {
+      display: block;
+      margin-bottom: 15px;
+    }
+  
+    .h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .h4 {
+      font-size: 1.8rem;
+      font-weight: normal;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .ingredients {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: block;
+    }
+  
+    .ingredients p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+  
+    .classic-flavor img {
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
+    }
+  
+    h4 .h4-1 .design {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .design {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: block;
+    }
+  
+    .design p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+    .citrus-flavor img {
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
+      margin-top: 40px;
+    }
+  
+    h4 .h4-2 .flavor {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .flavor {
+      padding-right: 20px;
+      display: block;
+    }
+  
+    .flavor p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+  
+    .berry-flavor img {
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
+      margin-top: 40px;
+    }
+  
+    .choose {
+      font-size: 2rem;
+      font-weight: bold;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .classic-flavor-small img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      margin-right: 100px;
+    }
+  
+    .tittle-CV {
+      font-size: 2rem;
+      font-weight: normal;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .text-CV {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: block;
+    }
+  
+    .text-CV p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+  
+    .tittle-CF {
+      font-size: 2rem;
+      font-weight: normal;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .citrus-flavor-small img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      margin-right: 100px;
+    }
+  
+    .text-CF {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: block;
+    }
+  
+    .text-CF p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+  
+    .tittle-BF {
+      font-size: 2rem;
+      font-weight: normal;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .berry-flavor-small img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      margin-right: 100px;
+    }
+  
+    .text-BF {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: block;
+    }
+  
+    .text-BF p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+  
+    .read-more-btn {
+      display: inline-flex;
+      padding: 8px 12px;
+      font-size: 18px;
+      text-decoration: none;
+      border: 2px solid #000;
+      color: black;
+      border-radius: 15px;
+      transition: all 0.3s ease-in-out;
+      font-family: russo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      margin-top: 10px;
+    }
+  
+    .read-more-btn a {
+      text-decoration: none;
+    }
+  
+    .read-more-btn:hover {
+      transform: scale(1.1);
+    }
+  
+    /*Share Place*/
+  
+    .share h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: black;
+      margin: 0;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .text-share {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: block;
+    }
+  
+    .text-share p {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+  
+    .upload-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+  
+    .upload-circle {
+      width: 250px;
+      height: 250px;
+      background-color: #4a4a4a;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .upload-box {
+      width: 400px;
+      height: 400px;
+      background-color: #d3d3d3;
+      border: 3px dashed black;
+    }
+  
+    .share-btn {
+      display: inline-flex;
+      padding: 8px 12px;
+      font-size: 18px;
+      text-decoration: none;
+      border: 2px solid #000;
+      color: black;
+      border-radius: 15px;
+      transition: all 0.3s ease-in-out;
+      font-family: russo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      margin-top: 10px;
+    }
+  
+    .share-btn a {
+      text-decoration: none;
+    }
+  
+    .share-btn:hover {
+      transform: scale(1.1);
+    }
+  
+    /* Footer */
+    #footer {
+      background-color: #4a4a4a;
+      color: black;
+      padding: 40px 20px;
+      display: grid;
+      gap: 20px;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .logo-footer {
+      width: 100px;
+      height: auto;
+      justify-self: center;
+    }
+  
+    .contact {
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: left;
+      justify-self: end;
+    }
+  
+    .social-icons-footer {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .social-icons-footer i {
+      font-size: 20px;
+      color: white;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+  
+    .social-icons-footer i:hover {
+      transform: scale(1.2);
+      color: blueviolet;
+    }
+  
+    .footer-text {
+      font-size: 12px;
+      max-width: 800px;
+      margin: 20px auto 0;
+      line-height: 1.5;
+      opacity: 0.8;
+    }
+  
+    /*Products css*/
+  
+    #main-products img{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+  }
+  
